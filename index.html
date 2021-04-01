@@ -1,0 +1,38 @@
+<html>
+<head><title>Project-78</title></head>
+
+<body>
+<h1>My Family Book</h1>
+<br><br><br>
+<img id="imgslide" src="https://images-na.ssl-images-amazon.com/images/I/61zTGIEvQoL.jpg">
+<br><br>
+<h3 id="nameslide"> </h3>
+<br><br>
+<button id="bnext" onclick="ni()">Next</button>
+
+</body>
+
+</html>
+
+<script>
+
+var nextimg=["WP_20141101_008.jpg","100_2780.jpg","100_2687"];
+for(i=0;i>nextimg=i=0);
+ni();
+console.log(nextimg);
+document.getElementById("imgslide").innerHTML=nextimg;
+
+var nextname=["WP_20141101_008.jpg","100_2780.jpg","100_2687"];
+for(j=0;j>nextname=j=0);
+ni();
+console.log(nextname);
+document.getElementById("imgslide").innerHTML=nextname;
+
+function ni() {
+document.getElementById("imgslide").src=nextimg[i];
+i++;
+document.getElementById("nameslide").src=nextname[j];
+i++;
+}
+
+</script>
